@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>curso Jquery</title>
+</head>
+<body>
+<h1 class= "saludo">hola</h1>
+<p id="parrafo">saludos</p>
+<div>:3 :)</div>
+	<script src="cursoJquery/jquery.min.js"></script>
+		<script>
+			$(document).ready(function)(){
+				//alert ("hola");
+				$('#parrafo').text("holi");
+				$('.saludo').css({'background-color': 'red'});
+			
+				});
+			$.when($.ready, $.getScript("optional.js")).then(function){
+				console.log("paso");
+			}).catch (function(){
+				console.log("error");
+			});
+
+		</script>
+</body>
+</html>
