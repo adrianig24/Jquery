@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>curso Jquery</title>
+</head>
+<body>
+<h1 class= "saludo">hola</h1>
+<p id="parrafo">saludos</p>
+<img id="coco" src="img/coco.jpg" width="400"> 
+<button id="bt1"> mostrar</button>
+<button id="bt2"> ocultar</button>
+	<script src="cursoJquery/jquery.min.js"></script>
+	<script>
+		$(funcion(){
+//efectos
+$('bt1').click(funcion(){
+	$('#coco').slideDown();
+	//animate ({heigth: 900 px}); , si AÑADIMOS UN ,300 LO RETARDA 3 SEG
+	});
+
+$('bt2').click(funcion(){
+	$('#coco').slideOut();
+	});
+		});
+
+		</script>
+</body>
+</html>

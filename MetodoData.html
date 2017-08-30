@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>curso Jquery</title>
+</head>
+<body>
+<center>
+<h1 class= "fa fa-volume-up" id="icon"></h1>
+<ul id="colors">
+	<li>orange</li>
+	<li>purple</li>
+	<li>whithe</li>
+</ul>
+</center>
+<script src="cursoJquery/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/e622d3b53e.js"></script>
+	<script>
+		$(funcion(){
+			$('#icon').mouseDown(funcion(){
+				$('icon').data('status','cambiando');
+				$('#icon').addClass('fa fa-volume-off').removeClass('fa fa-volume-up');
+				//var icon = $('icon').data('atrib');
+				console.log($('icon').data('status'));
+			});
+
+				$('#icon').mouseDown(funcion(){
+				$('#icon').addClass('fa fa-volume-up').removeClass('fa fa-volume-off');
+			});
+		});
+
+		</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>curso Jquery</title>
+</head>
+<body>
+<center>
+<h1> curso </h1>
+<ol>
+	<li>elemento 1</li>
+	<li>elemento 2</li>
+	<li>elemento 3</li>
+	<li>elemento 4</li>
+
+</ol>
+
+<button id= "exe"> ejecutar</button>
+</center>
+<script src="cursoJquery/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/e622d3b53e.js"></script>
+	<script>
+		$(funcion(){
+			$('#exe').click(funcion(){
+				$('ol').append('hola');
+				//$('ol').append('<li>elemento nuevo</li>'); añadir nuevo elemento
+				//prepend añade al principio de la lista
+				
+				$('ol').append(('ol li:first')); //last
+
+				//var clone = $(('ol li:first')).text;
+
+				$('ol li:last').remove();
+
+			});
+		});
+
+		</script>
+</body>
+</html>
