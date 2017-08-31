@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>curso Jquery</title>
+</head>
+<body>
+<center>
+<h1> curso </h1>
+<ol id="padre_ol">
+	<li>elemento 1</li>
+	<li>elemento 2</li>
+	<li>elemento 3</li>
+	<li>elemento 4</li>
+
+</ol>
+
+<button id= "exe"> ejecutar</button>
+</center>
+<script src="cursoJquery/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/e622d3b53e.js"></script>
+	<script>
+		$(funcion(){
+			var hijos = $('padre_ol').children().text();
+				var padre = $('.hijo').parent();
+				//siblings hermanos
+			console.log(hijos);
+		});
+
+		</script>
+</body>
+</html>

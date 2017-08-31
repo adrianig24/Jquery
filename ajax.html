@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>curso Jquery</title>
+</head>
+<body>
+<center>
+<h1> curso </h1>
+</center>
+<script src="cursoJquery/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/e622d3b53e.js"></script>
+	<script>
+		$(funcion(){
+			$.get('js/ejemplo.php',{nombre: "adrian"},funcion(data){
+				$('#resultado').text(data);
+				});
+
+		});
+
+
+			$(funcion(){
+				$('#ejecutar').click(funcion(){
+				$.post('ejemplo.php',{nombre:"Luis",
+					metodo:"post"
+
+				},funcion(data, status){
+
+					});
+
+				});
+
+		
+
+		</script>
+</body>
+</html>
